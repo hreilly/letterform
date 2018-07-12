@@ -1,5 +1,5 @@
 # letterform
-A guide to the basic building blocks of progressive email design.
+A toolkit for the basic building blocks of progressive email design.
 
 # It All Comes Down to Function
 ### Time to Code Like It's 1999
