@@ -1,0 +1,25 @@
+/* Loading Web Fonts */
+
+@media screen {
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v5/HLBysyo0MQBO_7E-DWLwzg.woff2) format('woff2');
+ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+}
+
+/* Use the @media screen designator to keep Outlook from trying to load web fonts. Skipping this can result in Outlook ignoring a large part of your styling. */
+
+/* You can replace the @font-face details with any Google font you wish. While other fonts can be used, using Google fonts give you numerous options, good optimization, and high reliability. Here's a simple method to get the actual font-face elements from the Google fonts CSS:
+
+1. Navigate to fonts.google.com
+2. Select a font family (and add it with +)
+3. Open the dialogue box at the bottom and select 'Embed'
+4. Copy the url from the embed code and paste it into the search bar
+5. A page will load full of font-face elements
+6. Simply copy and paste the 'latin' element
+7. You'll need to do this for each font (and font-weight) you'd like to include
+
+Now you can call your Google font like any other font in your stack, in this case font-family: 'Poppins' */
