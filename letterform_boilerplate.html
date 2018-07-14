@@ -1,4 +1,4 @@
-<!-- This boilerplate is currently under construction. Completely open source, Hannah Reilly 2018 -->
+<!-- This boilerplate is currently under construction. Free for personal and commercial use, Hannah Reilly 2018 -->
 
 <!doctype html>
 <html>
@@ -6,10 +6,128 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width" initial-scale="1">
   <title>Letterform Boilerplate Template</title>
+  <style type="text/css">
+  /* Fixes */
+    /* Adjust text size for multiple platforms */
+    * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+    /* Removes automatic spacing in Outlook */
+    table, td {
+      mso-table-lspace: 0pt !important;
+      mso-table-rspace: 0pt !important;
+    }
+    /* Failsafe Outlook Webmail hidden class */
+    .outer-class .owa-hidden, [owa] .owa-hidden {
+      display:none;
+    }
+  </style>
+  <style type="text/css">
+  /* Styling */
+    /* Ensures the email fills the entire viewport */
+    html, body {
+      margin: 0 !important;
+      padding: 0 !important;
+      height: 100% !important;
+      width: 100% !important;
+    }
+    /* Hidden content designed to show in message preview */
+    .hidden-preheader {
+      display: none;
+      font-size: 1px;
+      line-height: 1px;
+      max-height: 0px;
+      max-width: 0px;
+      opacity: 0;
+      overflow: hidden;
+      mso-hide: all;
+      font-family: sans-serif;
+    }
+    /* Use this to adjust the background color */
+    .main-background-table {
+      background-color: #FFE082;
+      border: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .center-element {
+      width: 100%;
+      height: auto;
+    }
+    /* Values that establish the width and properties of the main message column */
+    .main-content-container {
+      border: 0;
+      width: 650px;
+      height: 100%;
+      align: center;
+      text-align: center;
+      margin: auto;
+      padding: 0;
+    }
+    /* UTILITY SELECTORS */
+
+    /* Assign this class to an element that should have the main message background color */
+    .message-color {
+      background-color: #ffffff;
+    }
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    h2 {
+      margin: 0;
+      padding: 0;
+      font-size: 21px;
+      font-weight: normal;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 21px;
+    }
+    .default-padding {
+      padding: 20px;
+    }
+    .default-link {
+      text-decoration: none;
+      color: #EF6C00;
+    }
+    /* Make sure the max-width of this media query matches the width of .main-content-container */
+    @media screen and (max-width: 650px) {
+    /* Note: Media queries require !important designators to override inlined styles */
+      .main-content-container {
+        width: 100% !important;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Preheader -->
-  <div style="display:none; font-size:1px; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; mso-hide:all; font-family:sans-serif;">Inbox Preheader/Preview Text | To ensure your inbox is always clean, make sure this content is at least 140 characters (for Apple Mail).</div>
+  <div class="hidden-preheader">Inbox Preheader/Preview Text | To ensure the inbox preview is always clean, come up with enough content to fill 140 characters (for Apple Mail).</div>
   <!-- End Preheader -->
+  <!-- Begin Main Content (Table 1) -->
+  <table class="main-background-table outer-class" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <div class="center-element">
+          <!-- Begin Centered Fixed-Width Table (Table 2) -->
+          <table class="main-content-container message-color" cellpadding="0" cellspacing="0">
+            <tr class="message-color">
+              <td class="default-padding">
+                <p>Hey, here is some text, let's see what happens right now when it needs to wrap in the browser and the width doesn't hit 650.</p>
+              </td>
+            </tr>
+          </table>
+          <!-- End Centered Fixed-Width Table -->
+        </div>
+      </td>
+    </tr>
+  </table>
+  <!-- End Main Content -->
 </body>
 </html>
