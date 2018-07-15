@@ -4,6 +4,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <!-- Ensures that content sizes to the initial viewport size -->
   <meta name="viewport" content="width=device-width" initial-scale="1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Letterform Boilerplate Template</title>
@@ -14,6 +15,11 @@
       -ms-text-size-adjust: 100%;
       -webkit-text-size-adjust: 100%;
     }
+    /* Prevents automatic table borders */
+    table {
+      border-spacing: 0 !important;
+      border-collapse: collapse !important;
+    }
     /* Removes automatic spacing in Outlook */
     table, td {
       mso-table-lspace: 0pt !important;
@@ -22,8 +28,12 @@
     .outer-class, .outer-class p, .outer-class span, .outer-class font, .outer-class td, .outer-class div {
       line-height: 100%;
     }
-    /* Failsafe Outlook Webmail hidden class */
-    .outer-class .owa-hidden, [owa] .owa-hidden {
+    /* Outlook hidden class */
+    .outlook-hidden {
+      mso-hide: all;
+    }
+    /* Outlook.com hidden class */
+    .ExternalClass .outlook-hidden, [owa] .outlook-hidden {
       display:none;
     }
     /* Continues automatic nested table styling in Yahoo */
@@ -62,7 +72,7 @@
     }
     /* Use this to adjust the background color */
     .main-background-table {
-      background-color: #FFE082;
+      background-color: #311B92;
       border: 0;
       width: 100%;
       height: 100%;
@@ -80,12 +90,16 @@
       text-align: center;
       margin: auto;
       padding: 0;
+      font-family: sans-serif;
     }
     /* UTILITY SELECTORS */
 
     /* Assign this class to an element that should have the main message background color */
     .message-color {
       background-color: #ffffff;
+    }
+    .accent-color {
+      background-color: #F50057;
     }
     h1 {
       margin: 0;
@@ -106,21 +120,29 @@
       font-weight: normal;
       line-height: 21px;
     }
+    /* Keeps all images from being stretched beyond their native resolution */
     img {
       max-width: 100%;
     }
     .default-padding {
       padding: 20px;
     }
-    .default-link {
+    .default-link-dark {
       text-decoration: none;
-      color: #EF6C00;
+      color: #6200EA;
+    }
+    .default-link-light {
+      text-decoration: none;
+      color: #ffffff;
     }
     /* Make sure the max-width of this media query matches the width of .main-content-container */
     @media screen and (max-width: 650px) {
     /* Note: Media queries require !important designators to override inlined styles */
       .main-content-container {
         width: 100% !important;
+      }
+      .mobile-hidden {
+        display: none;
       }
     }
   </style>
@@ -129,16 +151,16 @@
   <!-- Preheader -->
   <div class="hidden-preheader">Inbox Preheader/Preview Text | To ensure the inbox preview is always clean, come up with enough content to fill 140 characters (for Apple Mail).</div>
   <!-- End Preheader -->
-  <!-- Begin Main Content (Table 1) -->
+  <!-- Begin Main Content (Table Lvl 1) -->
   <table class="main-background-table outer-class" cellpadding="0" cellspacing="0">
     <tr>
       <td>
         <div class="center-element">
-          <!-- Begin Centered Fixed-Width Table (Table 2) -->
+          <!-- Begin Centered Fixed-Width Table (Table Lvl 2) -->
           <table class="main-content-container message-color" cellpadding="0" cellspacing="0">
-            <tr class="message-color">
-              <td class="default-padding">
-                <p>Hey, here is some text, let's see what happens right now when it needs to wrap in the browser and the width doesn't hit 650.</p>
+            <tr>
+              <td>
+                <p class="default-padding">Hello world!</p>
               </td>
             </tr>
           </table>

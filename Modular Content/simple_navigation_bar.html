@@ -1,0 +1,53 @@
+/* Apply this class to a table cell that is populated by a single &nbsp; to create a pseudo horizontal rule */
+<style type="text/css">
+  /* New classes */
+  .main-navigation {
+    width: 100%;
+  }
+  .main-navigation-label {
+    align: center;
+    text-align: center;
+    padding: 15px 20px 15px 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  /* Boilerplate classes */
+  .outlook-hidden {
+    mso-hide: all;
+  }
+  .ExternalClass .outlook-hidden, [owa] .outlook-hidden {
+    display: none;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+  .accent-color {
+    background-color: #EEFF41;
+  }
+  .default-link-light {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  /* Make sure the max-width of this media query matches the width of .main-content-container */
+  @media screen and (max-width: 650px) {
+  /* Note: Media queries require !important designators to override inlined styles */
+    .mobile-hidden {
+      display: none;
+    }
+  }
+</style>
+
+<tr class="accent-color outlook-hidden mobile-hidden">
+  <td class="main-navigation outlook-hidden">
+    <table class="main-navigation outlook-hidden accent-color">
+      <tr class="outlook-hidden">
+        <td class="main-navigation-label"><a class="default-link-light" href="#">LINK</a></td>
+        <td class="main-navigation-label"><a class="default-link-light" href="#">LINK</a></td>
+        <td class="main-navigation-label"><a class="default-link-light" href="#">LINK</a></td>
+        <td class="main-navigation-label"><a class="default-link-light" href="#">LINK</a></td>
+      </tr>
+    </table>
+  </td>
+</tr>

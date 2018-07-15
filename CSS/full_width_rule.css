@@ -1,0 +1,10 @@
+/* Apply this class to a table cell that is populated by a single &nbsp; to create a pseudo horizontal rule */
+<style type="text/css">
+  .full-width-rule {
+    text-align: center;
+    vertical-align: middle;
+    mso-height-rule: exactly;
+    line-height: 1px;
+    border-top: 5px solid #6200EA;
+  }
+</style>
