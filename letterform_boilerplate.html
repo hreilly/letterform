@@ -95,16 +95,17 @@
     }
     /* UTILITY SELECTORS */
 
-    /* Assign main message background color */
+    /* Assign primary message background color with dark font color */
     .message-color {
       background-color: #ffffff;
       color: #424242;
     }
-    /* Assign accent background color */
+    /* Assign accent background color with white font color */
     .accent-color {
       background-color: #F50057;
       color: #ffffff;
     }
+    /* Assign main background color with white font color */
     .bg-color {
       background-color: #311B92;
       color: #ffffff;
@@ -114,12 +115,14 @@
       padding: 0;
       font-size: 24px;
       font-weight: 700;
+      text-align: left;
     }
     h2 {
       margin: 0;
       padding: 0;
       font-size: 21px;
       font-weight: normal;
+      text-align: left;
     }
     p {
       margin: 0;
@@ -129,16 +132,24 @@
       line-height: 21px;
       text-align: left;
     }
+    /* Set size for small italic font, useful for disclaimers, secondary links, and other utility applications */
+    .small-italic {
+      font-size: 12px;
+      font-style: italic;
+    }
     /* Keeps all images from being stretched beyond their native resolution */
     img {
       max-width: 100%;
     }
-    .default-padding {
+    .percent-padding {
+      padding: 8%;
+    }
+    .fixed-padding {
       padding: 20px;
     }
     .default-link-dark {
       text-decoration: none;
-      color: #6200EA;
+      color: #F50057;
     }
     .default-link-light {
       text-decoration: none;
@@ -163,26 +174,35 @@
   </style>
 </head>
 <body>
-  <!-- Preheader -->
+  <!-- Preheader: Most email clients show a preview of the text in your message. If the first content isn't set by you intentionally, the client pulls whatever it encounters first, typically the web copy link. -->
   <div class="hidden-preheader">Inbox Preheader/Preview Text | To ensure the inbox preview is always clean, come up with enough content to fill 140 characters (for Apple Mail).</div>
   <!-- End Preheader -->
   <!-- Begin Main Content (Table Lvl 1) -->
-  <table class="main-background-table outer-class" cellpadding="0" cellspacing="0">
+  <table class="main-background-table" cellpadding="0" cellspacing="0">
     <tr>
       <td>
         <div class="center-element">
           <!-- Begin Centered Fixed-Width Table (Table Lvl 2) -->
           <table class="main-content-container message-color" cellpadding="0" cellspacing="0">
+            <!-- Web Version : BEGIN -->
+            <tr class="bg-color">
+              <td class="fixed-padding"><a href="#" class="default-link-dark small-italic">Open in your browser &#10132;</a></td>
+            </tr>
+            <!-- Web Version : END -->
 
             <!-- END BOILERPLATE: BEGIN CONTENT -->
             <!-- Centered Logo -->
             <tr class="bg-color">
-              <td class="default-padding"><img src="https://raw.githubusercontent.com/hreilly/letterform/master/Images/letterform.png" class="default-image" alt="alt_text"/></td>
+              <td class="fixed-padding"><img src="https://raw.githubusercontent.com/hreilly/letterform/master/Images/letterform.png" class="default-image" alt="alt_text"/></td>
             </tr>
             <!-- End Logo -->
             <tr>
-              <td class="default-padding">
-                <p>Thanks for your interest in Letterform! Feel free to use this content however you'd like. If you'd like to use the letterform logo or reproduce this content in an unchanged context, please provide a backlink so others can find the original. Happy emailing!</p>
+              <td class="percent-padding">
+                <h1>Helping function take shape.</h1>
+                <p>&nbsp;</p>
+                <p>Thanks for your interest in Letterform! Feel free to use this content however you'd like. If you want to use the Letterform logo or reproduce this content in an unchanged context, please <a href="https://github.com/hreilly/letterform" class="default-link-dark">provide a backlink</a> so others can find the original. Happy emailing!</p>
+                <p>&nbsp;</p>
+                <p>For template pieces, CSS classes, and other email design tools, visit <a href="https://github.com/hreilly/letterform" class="default-link-dark">github.com/hreilly/letterform.</a></p>
               </td>
             </tr>
             <!-- END CONTENT -->
