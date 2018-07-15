@@ -1,4 +1,5 @@
-# letterform
+![Letterform](https://raw.githubusercontent.com/hreilly/letterform/master/Images/letterform-dark.png "Letterform | An email toolkit")
+
 A toolkit for the basic building blocks of progressive email design.
 
 # It All Comes Down to Function
