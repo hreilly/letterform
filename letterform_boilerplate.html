@@ -5,9 +5,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width" initial-scale="1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Letterform Boilerplate Template</title>
   <style type="text/css">
-  /* Fixes */
+    /* Fixes */
     /* Adjust text size for multiple platforms */
     * {
       -ms-text-size-adjust: 100%;
@@ -18,13 +19,28 @@
       mso-table-lspace: 0pt !important;
       mso-table-rspace: 0pt !important;
     }
+    .outer-class, .outer-class p, .outer-class span, .outer-class font, .outer-class td, .outer-class div {
+      line-height: 100%;
+    }
     /* Failsafe Outlook Webmail hidden class */
     .outer-class .owa-hidden, [owa] .owa-hidden {
       display:none;
     }
+    /* Continues automatic nested table styling in Yahoo */
+    table table table {
+      table-layout: auto;
+    }
+    /* Disables automatic link styling in Yahoo */
+    .yshortcuts a {
+      border-bottom: none !important;
+    }
+    /* Prevents automatic autolink styling on Apple devices */
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+    }
   </style>
   <style type="text/css">
-  /* Styling */
+    /* Styling */
     /* Ensures the email fills the entire viewport */
     html, body {
       margin: 0 !important;
@@ -89,6 +105,9 @@
       font-size: 16px;
       font-weight: normal;
       line-height: 21px;
+    }
+    img {
+      max-width: 100%;
     }
     .default-padding {
       padding: 20px;
