@@ -25,7 +25,8 @@
       mso-table-lspace: 0pt !important;
       mso-table-rspace: 0pt !important;
     }
-    .outer-class, .outer-class p, .outer-class span, .outer-class font, .outer-class td, .outer-class div {
+    /* Line-height adjustment for Outlook.com */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
       line-height: 100%;
     }
     /* Outlook hidden class */
@@ -94,12 +95,19 @@
     }
     /* UTILITY SELECTORS */
 
-    /* Assign this class to an element that should have the main message background color */
+    /* Assign main message background color */
     .message-color {
       background-color: #ffffff;
+      color: #424242;
     }
+    /* Assign accent background color */
     .accent-color {
       background-color: #F50057;
+      color: #ffffff;
+    }
+    .bg-color {
+      background-color: #311B92;
+      color: #ffffff;
     }
     h1 {
       margin: 0;
@@ -119,6 +127,7 @@
       font-size: 16px;
       font-weight: normal;
       line-height: 21px;
+      text-align: left;
     }
     /* Keeps all images from being stretched beyond their native resolution */
     img {
@@ -134,6 +143,10 @@
     .default-link-light {
       text-decoration: none;
       color: #ffffff;
+    }
+    .default-image {
+      width: auto;
+      margin: auto;
     }
     /* Make sure the max-width of this media query matches the width of .main-content-container */
     @media screen and (max-width: 650px) {
@@ -161,10 +174,15 @@
           <!-- Begin Centered Fixed-Width Table (Table Lvl 2) -->
           <table class="main-content-container message-color" cellpadding="0" cellspacing="0">
 
-            <!-- BEGIN CONTENT -->
+            <!-- END BOILERPLATE: BEGIN CONTENT -->
+            <!-- Centered Logo -->
+            <tr class="bg-color">
+              <td class="default-padding"><img src="https://raw.githubusercontent.com/hreilly/letterform/master/Images/letterform.png" class="default-image" alt="alt_text"/></td>
+            </tr>
+            <!-- End Logo -->
             <tr>
-              <td>
-                <p class="default-padding">Hello world!</p>
+              <td class="default-padding">
+                <p>Thanks for your interest in Letterform! Feel free to use this content however you'd like. If you'd like to use the letterform logo or reproduce this content in an unchanged context, please provide a backlink so others can find the original. Happy emailing!</p>
               </td>
             </tr>
             <!-- END CONTENT -->
