@@ -137,12 +137,14 @@
     }
     /* Make sure the max-width of this media query matches the width of .main-content-container */
     @media screen and (max-width: 650px) {
-    /* Note: Media queries require !important designators to override inlined styles */
+      /* Note: Media queries require !important designators to override inlined styles */
+      /* Limit content to width of screen */
       .main-content-container {
         width: 100% !important;
       }
+      /* Utility class for hiding content on screens smaller than 650px */
       .mobile-hidden {
-        display: none;
+        display: none !important;
       }
     }
   </style>
@@ -158,11 +160,15 @@
         <div class="center-element">
           <!-- Begin Centered Fixed-Width Table (Table Lvl 2) -->
           <table class="main-content-container message-color" cellpadding="0" cellspacing="0">
+
+            <!-- BEGIN CONTENT -->
             <tr>
               <td>
                 <p class="default-padding">Hello world!</p>
               </td>
             </tr>
+            <!-- END CONTENT -->
+
           </table>
           <!-- End Centered Fixed-Width Table -->
         </div>
