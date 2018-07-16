@@ -93,9 +93,8 @@
       border: 0;
       width: 600px;
       height: 100%;
-      /* This text-align is important. Because of the way tables work, content, like images, can be aligned using the text-align property */
+      /* This text-align is important. Because of the way tables work, non-block-level items, like images, can be aligned using the text-align property */
       text-align: center;
-      align: center;
       margin: auto;
       padding: 0;
     }
@@ -126,7 +125,7 @@
         <div class="center-element">
 
           <!-- Begin Centered Fixed-Width Table (Table Lvl 2) -->
-          <table class="main-content-container" cellpadding="0" cellspacing="0">
+          <table class="main-content-container" align="center" cellpadding="0" cellspacing="0">
 
             <!-- END BOILERPLATE : BEGIN CONTENT -->
               <tr style="background-color: #78909C;">
