@@ -1,4 +1,4 @@
-<!-- This boilerplate is a stripped down version of Letterform. Free for personal and commercial use, Hannah Reilly 2018 -->
+<!-- This boilerplate is a stripped down version of Letterform to let you build however you'd like. Free for personal and commercial use, Hannah Reilly 2018 -->
 
 <!doctype html>
 <html>
@@ -95,10 +95,11 @@
     /* Make sure the max-width of this media query matches the width of .main-content-container */
     @media screen and (max-width: 600px) {
       /* Note: Media queries require !important designators to override inlined styles */
-      /* Limit content to width of screen */
+      /* This selector is redundant if you set the height to auto in the main styling */
       .main-background-table {
         height: auto !important;
       }
+      /* Limit content to width of screen */
       .main-content-container {
         width: 100% !important;
       }
