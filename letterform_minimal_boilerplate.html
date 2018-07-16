@@ -1,0 +1,149 @@
+<!-- This boilerplate is a stripped down version of Letterform. Free for personal and commercial use, Hannah Reilly 2018 -->
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Ensures that content sizes to the initial viewport size -->
+  <meta name="viewport" content="width=device-width" initial-scale="1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Letterform Ascetic Boilerplate</title>
+  <style type="text/css">
+    /* Fixes */
+    /* Adjust text size for multiple platforms */
+    * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+    /* Prevents automatic table borders */
+    table {
+      border-spacing: 0 !important;
+      border-collapse: collapse !important;
+    }
+    /* Removes automatic spacing in Outlook */
+    table, td {
+      mso-table-lspace: 0pt !important;
+      mso-table-rspace: 0pt !important;
+    }
+    /* Line-height adjustment for Outlook.com */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+      line-height: 100%;
+    }
+    /* Outlook hidden class */
+    .outlook-hidden {
+      mso-hide: all;
+    }
+    /* Outlook.com hidden class */
+    .ExternalClass .outlook-hidden, [owa] .outlook-hidden {
+      display:none;
+    }
+    /* Continues automatic nested table styling in Yahoo */
+    table table table {
+      table-layout: auto;
+    }
+    /* Disables automatic link styling in Yahoo */
+    .yshortcuts a {
+      border-bottom: none !important;
+    }
+    /* Prevents automatic autolink styling on Apple devices */
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+    }
+    /* Ensures the email fills the entire viewport */
+    html, body {
+      margin: 0 !important;
+      padding: 0 !important;
+      height: 100% !important;
+      width: 100% !important;
+    }
+    /* Hidden content designed to show in message preview */
+    .hidden-preheader {
+      display: none;
+      font-size: 1px;
+      line-height: 1px;
+      max-height: 0px;
+      max-width: 0px;
+      opacity: 0;
+      overflow: hidden;
+      mso-hide: all;
+    }
+    /* Use this to adjust the content placement. */
+    .main-background-table {
+      border: 0;
+      width: 100%;
+      /* Height:100% will center all content; height:auto to align the content to top */
+      height: 100%;
+      /* Sets the background color of the main viewport */
+      background-color: #78909C;
+    }
+    /* Centered div provides a layer of separation between the 1st and 2nd level tables */
+    .center-element {
+      width: 100%;
+      height: auto;
+      margin: auto;
+    }
+    /* Values that establish the width and properties of the main message column */
+    .main-content-container {
+      border: 0;
+      width: 600px;
+      height: 100%;
+      text-align: center;
+      align: center;
+      margin: auto;
+      padding: 0;
+    }
+    /* Make sure the max-width of this media query matches the width of .main-content-container */
+    @media screen and (max-width: 600px) {
+      /* Note: Media queries require !important designators to override inlined styles */
+      /* Limit content to width of screen */
+      .main-background-table {
+        height: auto !important;
+      }
+      .main-content-container {
+        width: 100% !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Preheader: Most email clients show a preview of the text in your message. If the first content isn't set by you intentionally, the client pulls whatever it encounters first, typically the web copy link. -->
+  <div class="hidden-preheader">Inbox Preheader/Preview Text | To ensure the inbox preview is always clean, come up with enough content to fill 140 characters (for Apple Mail).</div>
+  <!-- End Preheader -->
+
+  <!-- Main Content (Table Lvl 1) -->
+  <table class="main-background-table" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <div class="center-element">
+
+          <!-- Begin Centered Fixed-Width Table (Table Lvl 2) -->
+          <table class="main-content-container" cellpadding="0" cellspacing="0">
+
+            <!-- END BOILERPLATE : BEGIN CONTENT -->
+              <tr style="background-color: #78909C;">
+                <td style="padding: 10%;">
+                  <div style="text-align: center; font-family: Arial, sans-serif; color: #ffffff;">
+                    <p style="font-weight: 600; font-size: 24px;">“Smile, breathe and go slowly.”</p>
+                    <p style="font-style: italic; font-weight: 200; font-size: 18px;">- Thich Nhat Hanh</p>
+                  </div>
+                </td>
+              </tr>
+              <tr style="background-color: #78909C;">
+                <td style="padding: 40px; margin: auto;">
+                  <a href="https://github.com/hreilly/letterform" style="margin: auto;"><img src="https://raw.githubusercontent.com/hreilly/letterform/master/Images/letterform-icon-light.png" alt="alt_text"/ style="max-width: 100%; margin: auto;"></a>
+                </td>
+              </tr>
+            <!-- END CONTENT -->
+
+          </table>
+          <!-- End Centered Fixed-Width Table -->
+
+        </div>
+      </td>
+    </tr>
+  </table>
+  <!-- End Main Content -->
+
+</body>
+</html>

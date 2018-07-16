@@ -81,11 +81,12 @@
     .center-element {
       width: 100%;
       height: auto;
+      margin: auto;
     }
     /* Values that establish the width and properties of the main message column */
     .main-content-container {
       border: 0;
-      width: 650px;
+      width: 600px;
       height: 100%;
       align: center;
       text-align: center;
@@ -116,6 +117,7 @@
       font-size: 24px;
       font-weight: 700;
       text-align: left;
+      font-family: 'Arial', sans-serif;
     }
     h2 {
       margin: 0;
@@ -123,6 +125,7 @@
       font-size: 21px;
       font-weight: normal;
       text-align: left;
+      font-family: sans-serif;
     }
     p {
       margin: 0;
@@ -130,7 +133,16 @@
       font-size: 16px;
       font-weight: normal;
       line-height: 21px;
-      text-align: left;
+      font-family: sans-serif;
+    }
+    .left {
+      text-align: left
+    }
+    .right {
+      text-align: right;
+    }
+    .center {
+      text-align: center;
     }
     /* Set size for small italic font, useful for disclaimers, secondary links, and other utility applications */
     .small-italic {
@@ -150,21 +162,26 @@
     .default-link-dark {
       text-decoration: none;
       color: #F50057;
+      -webkit-appearance: none;
     }
     .default-link-light {
       text-decoration: none;
       color: #ffffff;
+      -webkit-appearance: none;
     }
     .default-image {
       width: auto;
       margin: auto;
     }
     /* Make sure the max-width of this media query matches the width of .main-content-container */
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 600px) {
       /* Note: Media queries require !important designators to override inlined styles */
       /* Limit content to width of screen */
       .main-content-container {
         width: 100% !important;
+      }
+      .main-background-table {
+        height: auto !important;
       }
       /* Utility class for hiding content on screens smaller than 650px */
       .mobile-hidden {
@@ -200,9 +217,19 @@
               <td class="percent-padding">
                 <h1>Helping function take shape.</h1>
                 <p>&nbsp;</p>
-                <p>Thanks for your interest in Letterform! Feel free to use this content however you'd like. If you want to use the Letterform logo or reproduce this content in an unchanged context, please <a href="https://github.com/hreilly/letterform" class="default-link-dark">provide a backlink</a> so others can find the original. Happy emailing!</p>
+                <p class="left">Thanks for your interest in Letterform! Feel free to use this content however you'd like. If you want to use the Letterform logo or reproduce this content in an unchanged context, please <a href="https://github.com/hreilly/letterform" class="default-link-dark">provide a backlink</a> so others can find the original. Happy emailing!</p>
                 <p>&nbsp;</p>
-                <p>For template pieces, CSS classes, and other email design tools, visit <a href="https://github.com/hreilly/letterform" class="default-link-dark">github.com/hreilly/letterform.</a></p>
+                <p class="left">For template pieces, CSS classes, and other email design tools, visit <a href="https://github.com/hreilly/letterform" class="default-link-dark">github.com/hreilly/letterform.</a></p>
+              </td>
+            </tr>
+            <tr class="bg-color">
+              <td class="fixed-padding">
+                <p>&nbsp;</p>
+                <!-- Logo icon that links to main site -->
+                <a href="https://github.com/hreilly/letterform" class="default-link-dark"><img src="https://raw.githubusercontent.com/hreilly/letterform/master/Images/letterform-icon-light.png" class="default-image" alt="alt_text"/></a>
+                <p>&nbsp;</p>
+                <!-- Unsubscribe Link -->
+                <p class="small-italic"><a href="#" class="default-link-dark">&#10006; Unsubscribe</a> &nbsp;|&nbsp; <a href="#" class="default-link-dark small-italic">Letterform 2018</a></p>
               </td>
             </tr>
             <!-- END CONTENT -->
