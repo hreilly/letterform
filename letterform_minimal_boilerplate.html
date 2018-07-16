@@ -7,7 +7,7 @@
   <!-- Ensures that content sizes to the initial viewport size -->
   <meta name="viewport" content="width=device-width" initial-scale="1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Letterform Ascetic Boilerplate</title>
+  <title>Letterform Minimal Boilerplate</title>
   <style type="text/css">
     /* Fixes */
     /* Adjust text size for multiple platforms */
@@ -19,6 +19,12 @@
     table {
       border-spacing: 0 !important;
       border-collapse: collapse !important;
+    }
+    /* Prevent automatic platform specific styling */
+    table, tr, td, h1, h2, p, a {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
     }
     /* Removes automatic spacing in Outlook */
     table, td {
@@ -87,6 +93,7 @@
       border: 0;
       width: 600px;
       height: 100%;
+      /* This text-align is important. Because of the way tables work, content, like images, can be aligned using the text-align property */
       text-align: center;
       align: center;
       margin: auto;

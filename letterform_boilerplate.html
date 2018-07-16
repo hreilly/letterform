@@ -20,6 +20,12 @@
       border-spacing: 0 !important;
       border-collapse: collapse !important;
     }
+    /* Prevent automatic platform specific styling */
+    table, tr, td, h1, h2, p, a {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
     /* Removes automatic spacing in Outlook */
     table, td {
       mso-table-lspace: 0pt !important;
@@ -229,7 +235,7 @@
                 <a href="https://github.com/hreilly/letterform" class="default-link-dark"><img src="https://raw.githubusercontent.com/hreilly/letterform/master/Images/letterform-icon-light.png" class="default-image" alt="alt_text"/></a>
                 <p>&nbsp;</p>
                 <!-- Unsubscribe Link -->
-                <p class="small-italic"><a href="#" class="default-link-dark">&#10006; Unsubscribe</a> &nbsp;|&nbsp; <a href="#" class="default-link-dark small-italic">Letterform 2018</a></p>
+                <p class="small-italic"><a href="#" class="default-link-dark">&#10006;&#xFE0E; Unsubscribe</a> &nbsp;|&nbsp; <a href="#" class="default-link-dark small-italic">Letterform 2018</a></p>
               </td>
             </tr>
             <!-- END CONTENT -->
