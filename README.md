@@ -10,3 +10,5 @@ Okay, maybe not that bad, but just about. The basics of every email need to rely
 It's a tough pill to swallow. It gets even tougher when you spend the morning covered in dirty email code, then switch to clean and current web standards the same afternoon.
 
 And that's where good guides and boilerplates come in. It's really not beneficial to remember all the bad tricks that will make your emails work. Hazardous materials should be quarantined.
+
+I'm just a developer trying to keep track of all the things I've had to figure out. I hope you might find some help here.
