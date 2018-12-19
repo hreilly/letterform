@@ -89,7 +89,7 @@
       height: auto;
       margin: auto;
     }
-    /* Values that establish the width and properties of the main message column */
+    /* Values that establish the width and properties of the main message column (change in assigned container) */
     .main-content-container {
       border: 0;
       width: 600px;
@@ -99,6 +99,7 @@
       padding: 0;
       font-family: sans-serif;
     }
+    
     /* UTILITY SELECTORS */
 
     /* Assign primary message background color with dark font color */
@@ -111,7 +112,7 @@
       background-color: #F50057;
       color: #ffffff;
     }
-    /* Assign main background color with white font color */
+    /* Assign main background color with white font color (change in main table) */
     .bg-color {
       background-color: #311B92;
       color: #ffffff;
@@ -200,12 +201,12 @@
   <div class="hidden-preheader">Inbox Preheader/Preview Text | To ensure the inbox preview is always clean, come up with enough content to fill 140 characters (for Apple Mail on iOS). It's basically the length of a tweet, but probably not as pithy.</div>
   <!-- End Preheader -->
   <!-- Begin Main Content (Table Lvl 1) -->
-  <table class="main-background-table" cellpadding="0" cellspacing="0">
+  <table class="main-background-table" cellpadding="0" cellspacing="0" bgcolor="#311B92" width="100%">
     <tr>
       <td>
         <div class="center-element">
           <!-- Begin Centered Fixed-Width Table (Table Lvl 2) -->
-          <table class="main-content-container" align="center" cellpadding="0" cellspacing="0">
+          <table class="main-content-container" align="center" cellpadding="0" cellspacing="0" width="600">
             <!-- Web Version : BEGIN -->
             <tr class="bg-color">
               <td class="fixed-padding"><a href="#" class="default-link-dark small-italic">Open in your browser &#10132;</a></td>
