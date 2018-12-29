@@ -1,0 +1,77 @@
+/* Semantic Style Kit */
+
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.underline {
+  text-decoration: underline;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.small {
+  font-size: 12px;
+}
+.left {
+  text-align: left
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+.box-shadow {
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+}
+.text-light {
+  color: #ffffff;
+}
+.text-dark {
+  color: #424242;
+}
+.width-full {
+  width: 100%;
+}
+.width-half {
+  width: 50%;
+}
+.margin-none {
+  margin: 0;
+}
+.margin-center {
+  margin: auto;
+}
+.margin-default {
+  margin: auto auto 15px auto;
+}
+.margin-fixed {
+  margin: 20px;
+}
+.padding-none {
+  padding: 0;
+}
+.padding-fixed {
+  padding: 20px;
+}
+.padding-percent {
+  padding: 8%;
+}
+
+/* Sorta-Semantic Additions */
+
+.message-color {
+  background-color: #ffffff;
+  color: #424242;
+}
+.bg-color {
+  background-color: #311B92;
+  color: #ffffff;
+}
+.accent-color {
+  background-color: #F50057;
+  color: #ffffff;
+}
