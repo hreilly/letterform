@@ -12,3 +12,7 @@ It's a tough pill to swallow. It gets even tougher when you spend the morning co
 And that's where good guides and boilerplates come in. It's really not beneficial to remember all the bad tricks that will make your emails work. Hazardous materials should be quarantined.
 
 I'm just a developer trying to keep track of all the things I've had to figure out. I hope you might find some help here.
+
+<hr>
+
+*For additional strategies and resources, take a look at the [project wiki](https://github.com/hreilly/letterform/wiki).*
